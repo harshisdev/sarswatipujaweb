@@ -1,0 +1,225 @@
+/* variable */
+:root {
+  --primary: #ff0404;
+  --secondary: #ff6e00;
+  --gray: #ccc;
+  --black: #000;
+  --white: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  width: 100%;
+  color: var(--black);
+  overflow-x: hidden;
+}
+.text-primary {
+  color: var(--primary) !important ;
+}
+.text-secondary {
+  color: var(--secondary) !important ;
+}
+.fs-custom {
+  font-size: 0.825rem;
+}
+.hero-banner {
+  position: relative;
+  height: 100vh;
+}
+.header {
+  z-index: 3;
+}
+.contact {
+  width: 150px;
+  display: none;
+}
+.btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.btn-outline-primary:hover {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+.btn-outline-primary:focus {
+  box-shadow: none !important;
+}
+.bg-section::before {
+  content: "";
+  position: absolute;
+  top: -135px;
+  left: 0;
+  width: 50%;
+  height: 70vh;
+  background-image: url(../images/bg-img-left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.bg-section::after {
+  content: "";
+  position: absolute;
+  top: -135px;
+  right: -9.5%;
+  width: 50%;
+  height: 70vh;
+  background-image: url(../images/bg-img-right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.logo {
+  width: 150px;
+  display: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.nav li {
+  margin-right: 20px;
+  list-style: none;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+.nav li a {
+  color: var(--black);
+  text-decoration: none;
+}
+.nav li a:hover {
+  text-decoration: underline;
+  color: var(--primary);
+}
+.sticky {
+  position: fixed !important;
+  top: 0px;
+  background-color: var(--white);
+  z-index: 3;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slick-slider1 {
+  position: relative;
+  margin-top: 15vh;
+}
+
+.dipimg img {
+  position: absolute;
+  bottom: -76vh;
+  left: 48%;
+  width: 50px;
+  height: 50px;
+}
+
+.dipimg::before {
+  content: "";
+  position: absolute;
+  bottom: -77vh;
+  left: 0px;
+  width: 4%;
+  height: 120px;
+  background-image: url(../images/image-dip.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 2;
+}
+.dipimg::after {
+  content: "";
+  position: absolute;
+  bottom: -77vh;
+  right: 0px;
+  width: 4%;
+  height: 120px;
+  background-image: url(../images/image-dip.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 2;
+}
+.community {
+  position: relative;
+  width: 100%;
+  background-image: url(../images/community-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.community::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: var(--black);
+  opacity: 0.4;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+}
+.card img {
+  transition: 0.3s all ease-in-out;
+}
+.card-img-top {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s all ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.1);
+  transition: 0.3s all ease-in-out;
+  overflow: hidden;
+}
+.slick-track:last-child {
+  margin-right: 0px !important;
+}
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary);
+  color: var(--white);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+  background-color: var(--gray);
+  color: var(--white);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
