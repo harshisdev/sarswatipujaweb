@@ -8,12 +8,12 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() > headerOffset) {
             $header.addClass("sticky");
-            $logo.addClass("d-block");
-            $contact.addClass("d-block");
+            // $logo.addClass("d-block");
+            // $contact.addClass("d-block");
         } else {
             $header.removeClass("sticky");
-            $logo.removeClass("d-block");
-            $contact.removeClass("d-block");
+            // $logo.removeClass("d-block");
+            // $contact.removeClass("d-block");
         }
     });
 });

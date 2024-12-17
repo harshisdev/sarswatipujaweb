@@ -31,16 +31,8 @@ body {
 .fs-custom {
   font-size: 0.825rem;
 }
-.hero-banner {
-  position: relative;
-  height: 100vh;
-}
 .header {
   z-index: 3;
-}
-.contact {
-  width: 150px;
-  display: none;
 }
 .btn-outline-primary {
   border-color: var(--primary);
@@ -53,40 +45,18 @@ body {
 .btn-outline-primary:focus {
   box-shadow: none !important;
 }
-.bg-section::before {
-  content: "";
-  position: absolute;
-  top: -135px;
-  left: 0;
-  width: 50%;
-  height: 70vh;
-  background-image: url(../images/bg-img-left.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: 0;
-}
-.bg-section::after {
-  content: "";
-  position: absolute;
-  top: -135px;
-  right: -9.5%;
-  width: 50%;
-  height: 70vh;
-  background-image: url(../images/bg-img-right.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: 0;
+
+.slick-slider1 {
+  height: 56vh;
+  display: flex;
+  align-items: center;
 }
 .logo {
   width: 150px;
-  display: none;
 }
 
 .nav {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
 }
 .nav li {
   margin-right: 20px;
@@ -109,16 +79,9 @@ body {
   background-color: var(--white);
   z-index: 3;
   width: 100%;
-  height: 50px;
   display: flex;
   align-items: center;
-  padding: 5px 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.slick-slider1 {
-  position: relative;
-  margin-top: 15vh;
 }
 
 .dipimg img {
@@ -194,6 +157,9 @@ body {
 }
 .slick-track:last-child {
   margin-right: 0px !important;
+}
+.form-control:focus {
+  box-shadow: none !important;
 }
 #scrollToTopBtn {
   position: fixed;
