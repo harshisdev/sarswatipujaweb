@@ -83,41 +83,6 @@ body {
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.dipimg img {
-  position: absolute;
-  bottom: -76vh;
-  left: 48%;
-  width: 50px;
-  height: 50px;
-}
-
-.dipimg::before {
-  content: "";
-  position: absolute;
-  bottom: -77vh;
-  left: 0px;
-  width: 4%;
-  height: 120px;
-  background-image: url(../images/image-dip.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  z-index: 2;
-}
-.dipimg::after {
-  content: "";
-  position: absolute;
-  bottom: -77vh;
-  right: 0px;
-  width: 4%;
-  height: 120px;
-  background-image: url(../images/image-dip.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  z-index: 2;
-}
 .community {
   position: relative;
   width: 100%;

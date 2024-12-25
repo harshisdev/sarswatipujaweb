@@ -1,19 +1,13 @@
 // sticky header 
 $(document).ready(function () {
     const $header = $(".header");
-    const $logo = $(".logo");
-    const $contact = $(".contact");
     const headerOffset = $header.offset().top;
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > headerOffset) {
             $header.addClass("sticky");
-            // $logo.addClass("d-block");
-            // $contact.addClass("d-block");
         } else {
             $header.removeClass("sticky");
-            // $logo.removeClass("d-block");
-            // $contact.removeClass("d-block");
         }
     });
 });
