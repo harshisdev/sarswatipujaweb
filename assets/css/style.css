@@ -47,14 +47,9 @@ body {
 }
 
 .slick-slider1 {
-  height: 56vh;
   display: flex;
   align-items: center;
 }
-.logo {
-  width: 150px;
-}
-
 .nav {
   display: flex;
 }
@@ -86,7 +81,7 @@ body {
 .community {
   position: relative;
   width: 100%;
-  background-image: url(../images/community-img.jpg);
+  background-image: url(../images/community-banner.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -120,8 +115,8 @@ body {
   transition: 0.3s all ease-in-out;
   overflow: hidden;
 }
-.slick-track:last-child {
-  margin-right: 0px !important;
+.slick-slider2 .card {
+  margin-left: 15px;
 }
 .form-control:focus {
   box-shadow: none !important;
