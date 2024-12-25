@@ -99,6 +99,13 @@ body {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   overflow: hidden;
+  height: 100%;
+}
+.card p {
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
 }
 .card img {
   transition: 0.3s all ease-in-out;
@@ -131,7 +138,12 @@ body {
   color: var(--white);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.slick-slider2 .card:first-child {
+  margin-left: 0px;
+}
+.slick-slider2 .card:last-child {
+  margin-left: 0px;
+}
 footer {
   background-color: var(--gray);
   color: var(--white);
@@ -148,4 +160,15 @@ footer {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary);
+}
+@media only screen and (max-width: 480px) {
+  .nav li {
+    margin-right: 10px;
+  }
+  .nav li a {
+    font-size: 0.825rem;
+  }
+  .slick-slider2 .card {
+    margin-left: 0px;
+  }
 }
