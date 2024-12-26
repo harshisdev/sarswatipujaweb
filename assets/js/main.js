@@ -28,10 +28,10 @@ $(document).ready(function () {
     $('.slick-slider2').slick({
         autoplay: true,
         dots: false,
-        arrows: false,
+        arrows: true,
         infinite: true,
         speed: 300,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
             {
@@ -68,4 +68,15 @@ $(document).ready(function () {
         $('html, body').animate({ scrollTop: 0 }, 600);
         return false;
     });
+});
+
+
+// count down 
+document.addEventListener('DOMContentLoaded', () => {
+    var toDayFromNow = (new Date("Feb 02, 2025 23:59:59").getTime() / 1000) + (3600 / 60 / 60 / 24) - 1;
+    var flipdown = new FlipDown(toDayFromNow)
+        .start()
+        .ifEnded(() => {
+            document.querySelector(".flipdown").innerHTML = `<h2>Timer is ended</h2>`;
+        });
 });

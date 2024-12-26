@@ -2,9 +2,11 @@
 :root {
   --primary: #ff0404;
   --secondary: #ff6e00;
+  --headerbg: #ff9900;
   --gray: #ccc;
   --black: #000;
   --white: #fff;
+  --text-header: #095e9b;
 }
 * {
   margin: 0;
@@ -28,11 +30,17 @@ body {
 .text-secondary {
   color: var(--secondary) !important ;
 }
+.text-header {
+  color: var(--text-header) !important;
+  text-transform: uppercase;
+}
 .fs-custom {
   font-size: 0.825rem;
 }
 .header {
   z-index: 3;
+  background-color: var(--headerbg);
+  color: var(--white);
 }
 .btn-outline-primary {
   border-color: var(--primary);
@@ -44,6 +52,9 @@ body {
 }
 .btn-outline-primary:focus {
   box-shadow: none !important;
+}
+.box-shadow {
+  box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19);
 }
 
 .slick-slider1 {
@@ -63,10 +74,15 @@ body {
 .nav li a {
   color: var(--black);
   text-decoration: none;
+  color: var(--white);
 }
 .nav li a:hover {
   text-decoration: underline;
   color: var(--primary);
+}
+.active {
+  text-decoration: underline !important;
+  color: var(--primary) !important;
 }
 .sticky {
   position: fixed !important;
@@ -77,6 +93,7 @@ body {
   display: flex;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: var(--headerbg);
 }
 .community {
   position: relative;
@@ -97,7 +114,7 @@ body {
   opacity: 0.4;
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   overflow: hidden;
   height: 100%;
 }
@@ -160,6 +177,46 @@ footer {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary);
+}
+.slick-arrow::before {
+  color: var(--primary);
+}
+
+/* count down */
+.count-down {
+  margin: auto;
+  padding: 20px;
+}
+.count-down .flipdown {
+  margin: auto;
+  width: 600px;
+}
+.count-down h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.flipdown.flipdown__theme-dark .rotor,
+.flipdown.flipdown__theme-dark .rotor-top,
+.flipdown.flipdown__theme-dark .rotor-leaf-front,
+.flipdown.flipdown__theme-dark .rotor-bottom,
+.flipdown.flipdown__theme-dark .rotor-leaf-rear,
+.flipdown.flipdown__theme-dark
+  .rotor-group:nth-child(n + 2):nth-child(-n + 3):before,
+.flipdown.flipdown__theme-dark
+  .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
+  background-color: var(--primary);
+}
+
+@media (max-width: 550px) {
+  .count-down {
+    width: 100%;
+  }
+  .count-down h1 {
+    font-size: 2.5em;
+  }
 }
 @media only screen and (max-width: 480px) {
   .nav li {
