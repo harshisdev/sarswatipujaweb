@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <header class="header py-1" id="navbar-scroll">
+    <header class="header" id="navbar-scroll">
         <div class="container">
             <div class="row">
                 <div class="col-auto d-flex align-items-center">
@@ -68,40 +68,40 @@
     </header>
     <div data-bs-spy="scroll" data-bs-target="#navbar-scroll" data-bs-offset="100" tabindex="0">
         <!-- banner slider -->
-        <section id="home">
+        <section id="home" class="position-relative">
+            <h2 class="fs-2 fw-bolder mb-0 banner-text"><span class="position-relative">Welcome to Gaur City Club
+                    Celebrating 10
+                    <sup>th</sup>
+                    Years of Sarswati Puja</span>
+            </h2>
             <div class="slick-slider1">
                 <div style="display: flex; justify-content: center; align-items: center;">
-                    <img style="width: 100%; height: auto;" src="./assets/images/saraswati-puja-banner-1.png"
-                        alt="saraswati puja">
+                    <img style="width: 100%; height: calc(100vh - 60px);"
+                        src="./assets/images/saraswati-puja-banner-1.png" alt="saraswati puja">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center;">
-                    <img style="width: 100%; height: auto;" src="./assets/images/saraswati-puja-banner-3.png"
-                        alt="saraswati puja">
+                    <img style="width: 100%; height: calc(100vh - 60px);"
+                        src="./assets/images/saraswati-puja-banner-3.png" alt="saraswati puja">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center;">
-                    <img style="width: 100%; height: auto;" src="./assets/images/saraswati-puja-banner-4.png"
-                        alt="saraswati puja">
+                    <img style="width: 100%; height: calc(100vh - 60px);"
+                        src="./assets/images/saraswati-puja-banner-4.png" alt="saraswati puja">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center;">
-                    <img style="width: 100%; height: auto;" src="./assets/images/saraswati-puja-banner-5.png"
-                        alt="saraswati puja">
+                    <img style="width: 100%; height: calc(100vh - 60px);"
+                        src="./assets/images/saraswati-puja-banner-5.png" alt="saraswati puja">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center;">
-                    <img style="width: 100%; height: auto;" src="./assets/images/saraswati-puja-banner-6.png"
-                        alt="saraswati puja">
+                    <img style="width: 100%; height: calc(100vh - 60px);"
+                        src="./assets/images/saraswati-puja-banner-6.png" alt="saraswati puja">
                 </div>
             </div>
         </section>
         <!-- about -->
-        <section id="about" class="bg-light py-5">
-            <div class="container">
+        <section id="about" class="bg-light-primary py-5">
+            <div class="container position-relative z-2">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h2 class="fs-2 fw-bolder mb-0 text-header">Welcome to Gaur City Club Celebrating 10
-                            <sup style="text-transform: lowercase;">th</sup>
-                            Years
-                            of Sarswati puja
-                        </h2>
                         <p class="fs-2 mb-0 pt-2 lh-lg">
                             सरस्वति महाभागे विद्ये कमललोचने ।
                             <br>
@@ -189,7 +189,7 @@
                                 <img class="card-img-top" src="./assets/images/man-1.png" alt="Card image cap">
                             </div>
                             <div class="card-body text-center">
-                                <h3 class="fs-6 text-secondary mb-0">Sri Amar Kumar</h3>
+                                <h3 class="fs-6 text-secondary mb-0">Sri FirstName LastName</h3>
                                 <p class="fs-custom mb-0 text-primary mb-2">PRESIDENT</p>
                                 <p class="card-text fs-custom mb-1">Lorem ipsum dolor sit amet consectetur, adipisicing
                                     elit. Nostrum unde dolores architecto magni aperiam labore!
@@ -203,7 +203,7 @@
                                 <img class="card-img-top" src="./assets/images/man-1.png" alt="Card image cap">
                             </div>
                             <div class="card-body text-center">
-                                <h3 class="fs-6 text-secondary mb-0">Sri Amar Kumar</h3>
+                                <h3 class="fs-6 text-secondary mb-0">Sri FirstName LastName</h3>
                                 <p class="fs-custom mb-0 text-primary mb-2">SECRETARY</p>
                                 <p class="card-text fs-custom mb-1">Lorem ipsum dolor sit amet consectetur, adipisicing
                                     elit. Nostrum unde dolores architecto magni aperiam labore!
@@ -217,7 +217,7 @@
                                 <img class="card-img-top" src="./assets/images/man-1.png" alt="Card image cap">
                             </div>
                             <div class="card-body text-center">
-                                <h3 class="fs-6 text-secondary mb-0">Sri Amar Kumar</h3>
+                                <h3 class="fs-6 text-secondary mb-0">Sri FirstName LastName</h3>
                                 <p class="fs-custom mb-0 text-primary mb-2">TREASURER</p>
                                 <p class="card-text fs-custom mb-1">Lorem ipsum dolor sit amet consectetur, adipisicing
                                     elit. Nostrum unde dolores architecto magni aperiam labore!
@@ -234,9 +234,7 @@
                                     PRESIDENT
                                 </td>
                                 <td>
-                                    Sri Sandip Basu
-                                    <br>
-                                    Sri Himanshu Mishra
+                                    Sri FirstName LastName
                                 </td>
                             </tr>
                             <tr>
@@ -244,9 +242,9 @@
                                     VICE PRESIDENT
                                 </td>
                                 <td>
-                                    Sri Prasanta Mitra
+                                    Sri FirstName LastName
                                     <br>
-                                    Sri Muskan Kumar
+                                    Sri FirstName LastName
                                 </td>
                             </tr>
                             <tr>
@@ -254,9 +252,9 @@
                                     SECRETARY
                                 </td>
                                 <td>
-                                    Sri Prasanta Mitra
+                                    Sri FirstName LastName
                                     <br>
-                                    Sri Gulshan Kumar
+                                    Sri FirstName LastName
                                 </td>
                             </tr>
                             <tr>
@@ -264,7 +262,9 @@
                                     JOINT SECRETARY
                                 </td>
                                 <td>
-                                    Sri Prasanta Mitra
+                                    Sri FirstName LastName
+                                    <br>
+                                    Sri FirstName LastName
                                 </td>
                             </tr>
                             <tr>
@@ -272,7 +272,7 @@
                                     CULTURAL SECRETARY
                                 </td>
                                 <td>
-                                    Sri Prasanta Mitra
+                                    Sri FirstName LastName
                                 </td>
                             </tr>
                             <tr>
@@ -280,7 +280,7 @@
                                     ASSISTANT SECRETARY
                                 </td>
                                 <td>
-                                    Sri Prasanta Mitra
+                                    Sri FirstName LastName
                                 </td>
                             </tr>
                             <tr>
@@ -288,7 +288,7 @@
                                     TREASURER
                                 </td>
                                 <td>
-                                    Sri Prasanta Mitra
+                                    Sri FirstName LastName
                                 </td>
                             </tr>
                             <tr>
@@ -296,7 +296,7 @@
                                     SOCIAL SERVICE COMMITTEE
                                 </td>
                                 <td>
-                                    Sri Prasanta Mitra
+                                    Sri FirstName LastName
                                 </td>
                             </tr>
                             <tr>
@@ -304,7 +304,7 @@
                                     SAFETY AND SECURITY COMMITTEE
                                 </td>
                                 <td>
-                                    Sri Prasanta Mitra
+                                    Sri FirstName LastName
                                 </td>
                             </tr>
                             <tr>
@@ -312,7 +312,7 @@
                                     GARDENING COMMITTEE
                                 </td>
                                 <td>
-                                    Sri Prasanta Mitra
+                                    Sri FirstName LastName
                                 </td>
                             </tr>
                             <tr>
@@ -320,7 +320,7 @@
                                     CONVENOR
                                 </td>
                                 <td>
-                                    Sri Prasanta Mitra
+                                    Sri FirstName LastName
                                 </td>
                             </tr>
                             <tr>
@@ -328,9 +328,9 @@
                                     GOVERNING BODY
                                 </td>
                                 <td>
-                                    Sri Prasanta Mitra
+                                    Sri FirstName LastName
                                     <br>
-                                    sri Harsh Kumar
+                                    Sri FirstName LastName
                                 </td>
                             </tr>
                         </table>
@@ -345,10 +345,10 @@
                         <h6 class="fs-5 fw-bold mb-0 text-header">PATRON-IN-CHIEF</h6>
                         <ol class="px-3 mt-2">
                             <li class="ps-2">
-                                Smt Jayashree Majumdar
+                                Sri FirstName LastName
                             </li>
                             <li class="ps-2">
-                                Smt Harsh Kumar
+                                Sri FirstName LastName
                             </li>
                         </ol>
                     </div>
@@ -356,10 +356,10 @@
                         <h6 class="fs-5 fw-bold mb-0 text-header">AUDITOR</h6>
                         <ol class="px-3 mt-2">
                             <li class="ps-2">
-                                Smt Jayashree Majumdar
+                                Sri FirstName LastName
                             </li>
                             <li class="ps-2">
-                                Anil Thapa
+                                Sri FirstName LastName
                             </li>
                         </ol>
                     </div>
@@ -367,7 +367,7 @@
                         <h6 class="fs-5 fw-bold mb-0 text-header">PUJA SAFETY AND SECURITY</h6>
                         <ol class="px-3 mt-2">
                             <li class="ps-2">
-                                Smt Jayashree Majumdar
+                                Sri FirstName LastName
                             </li>
                         </ol>
                     </div>
@@ -375,7 +375,7 @@
                         <h6 class="fs-5 fw-bold mb-0 text-header">RECEPTION COMMITTEE</h6>
                         <ol class="px-3 mt-2">
                             <li class="ps-2">
-                                Smt Jayashree Majumdar
+                                Sri FirstName LastName
                             </li>
                         </ol>
                     </div>
@@ -384,7 +384,7 @@
                         </h6>
                         <ol class="px-3 mt-2">
                             <li class="ps-2">
-                                Smt Jayashree Majumdar
+                                Sri FirstName LastName
                             </li>
                         </ol>
                     </div>
@@ -392,7 +392,7 @@
                         <h6 class="fs-5 fw-bold mb-0 text-header">Volunteers</h6>
                         <ol class="px-3 mt-2">
                             <li class="ps-2">
-                                Smt Jayashree Majumdar
+                                Sri FirstName LastName
                             </li>
                         </ol>
                     </div>
