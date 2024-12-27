@@ -69,11 +69,11 @@
     <div data-bs-spy="scroll" data-bs-target="#navbar-scroll" data-bs-offset="100" tabindex="0">
         <!-- banner slider -->
         <section id="home" class="position-relative">
-            <h2 class="fs-2 fw-bolder mb-0 banner-text"><span class="position-relative">Welcome to Gaur City Club
-                    Celebrating 10
-                    <sup>th</sup>
-                    Years of Sarswati Puja</span>
-            </h2>
+            <h1 class="fw-bolder mb-0 banner-text">Welcome to Gaur City Club
+                Celebrating 10
+                <sup>th</sup>
+                Years of Sarswati Puja
+            </h1>
             <div class="slick-slider1">
                 <div style="display: flex; justify-content: center; align-items: center;">
                     <img style="width: 100%; height: calc(100vh - 60px);"
@@ -252,8 +252,6 @@
                                     SECRETARY
                                 </td>
                                 <td>
-                                    Sri FirstName LastName
-                                    <br>
                                     Sri FirstName LastName
                                 </td>
                             </tr>
@@ -640,11 +638,6 @@
                 document.getElementById('mobileError').classList.remove('d-none');
                 isValid = false;
             }
-            // Check for <script> tags
-            if (/<\s*script.*?>|<\s*\/\s*script\s*>/gi.test(textarea)) {
-                alert("Script tags are not allowed!");
-                e.preventDefault();
-            }
             if (!message.value.trim()) {
                 document.getElementById('messageError').classList.remove('d-none');
                 isValid = false;
@@ -656,6 +649,10 @@
             else {
                 alert("Your Form Submited")
             }
+        });
+        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar-scroll',
+            offset: 70,
         });
     </script>
 </body>
