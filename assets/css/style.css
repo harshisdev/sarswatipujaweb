@@ -226,6 +226,18 @@ footer {
   .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
   background-color: var(--primary);
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  width: 50%;
+  padding: 5px 10px;
+  border: 1px dashed var(--gray);
+  color: #454444;
+  font-size: 1.1rem;
+  vertical-align: top;
+}
 
 @media (max-width: 550px) {
   .count-down {
