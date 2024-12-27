@@ -77,7 +77,7 @@ body {
   margin-right: 20px;
   list-style: none;
 }
-.nav-item :last-child {
+.nav-pills :last-child {
   margin-right: 0;
 }
 .nav-link {
