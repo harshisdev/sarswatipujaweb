@@ -74,9 +74,8 @@ body {
   margin-right: 0;
 }
 .nav-link {
-  color: var(--black);
   text-decoration: none;
-  color: var(--white);
+  color: var(--primary);
   padding: 5px 5px;
   position: relative;
 }
@@ -94,10 +93,10 @@ body {
   content: unset;
 }
 .nav-link:hover {
-  color: var(--primary);
+  color: var(--white);
 }
 .active {
-  color: var(--primary) !important;
+  color: var(--white) !important;
   background-color: transparent !important;
 }
 .sticky {
