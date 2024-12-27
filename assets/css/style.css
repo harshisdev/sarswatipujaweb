@@ -42,6 +42,7 @@ body {
   z-index: 3;
   background-color: var(--headerbg);
   color: var(--white);
+  padding: 5px 0px;
 }
 .btn-outline-primary {
   border-color: var(--primary);
