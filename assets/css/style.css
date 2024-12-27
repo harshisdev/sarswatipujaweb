@@ -1,12 +1,11 @@
 /* variable */
 :root {
-  --primary: #ff0404;
+  --primary: #bd2904;
   --secondary: #ff6e00;
   --headerbg: #ff9900;
   --gray: #ccc;
   --black: #000;
   --white: #fff;
-  --text-header: #095e9b;
   --bgfooter: #7e7979;
 }
 * {
@@ -25,6 +24,7 @@ body {
   color: var(--black);
   overflow-x: hidden;
 }
+
 .text-primary {
   color: var(--primary) !important ;
 }
@@ -32,7 +32,7 @@ body {
   color: var(--secondary) !important ;
 }
 .text-header {
-  color: var(--text-header) !important;
+  color: var(--headerbg) !important;
   text-transform: uppercase;
 }
 .fs-custom {
@@ -66,25 +66,39 @@ body {
 .nav {
   display: flex;
 }
-.nav li {
+.nav-item {
   margin-right: 20px;
   list-style: none;
 }
-.nav li:last-child {
+.nav-item :last-child {
   margin-right: 0;
 }
-.nav li a {
+.nav-link {
   color: var(--black);
   text-decoration: none;
   color: var(--white);
+  padding: 5px 5px;
+  position: relative;
 }
-.nav li a:hover {
-  text-decoration: underline;
+.nav-link::after {
+  content: "";
+  width: 2px;
+  height: 60%;
+  background-color: var(--primary);
+  position: absolute;
+  top: 9px;
+  right: -12px;
+  display: block;
+}
+.nav-item:last-child .nav-link::after {
+  content: unset;
+}
+.nav-link:hover {
   color: var(--primary);
 }
 .active {
-  text-decoration: underline !important;
   color: var(--primary) !important;
+  background-color: transparent !important;
 }
 .sticky {
   position: fixed !important;
